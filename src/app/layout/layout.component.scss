@@ -1,0 +1,46 @@
+.sidebar {
+  margin: 0;
+  padding: 0;
+  padding-left: 0.6rem;
+  width: 11rem;
+  background-color: white;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  border-right: 2px solid #F1F1F1
+}
+
+#contenido-pagina {
+  margin-left: 10rem;
+  padding: 80px 20px;
+  align-items: center;
+  background-color: #EFF1F7;
+  height: 86.5vh;
+}
+
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media (max-width:800px) {
+  .sidebar {
+      padding-top: 1rem;
+      width: min-content;
+      height: max-content;
+  }
+  #contenido-pagina {
+      margin-left: 8.8rem;
+      align-items: stretch;
+      height: 100%;
+  }
+  .container-fluid {
+      padding-left: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #contenido-pagina {
+      margin-left: 2.5rem;
+      width: max-content;
+      height: max-content;
+  }
+}
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */

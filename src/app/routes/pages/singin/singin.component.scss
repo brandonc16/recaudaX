@@ -1,0 +1,60 @@
+.login {
+  margin-left: 20%;
+  margin-top: 5%;
+  padding: 0;
+  align-content: center;
+}
+
+.carta{
+border-radius: 29px;
+background: #ffffff;
+
+  width: 60%;
+  height: 90%;
+  padding: 30px;
+}
+
+img {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin: auto;
+  padding: auto;
+  padding-left: 30px;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  background-color: #034E9B;
+  color: white;
+  border-radius: 18px;
+  font-weight: bold;
+
+}
+
+.btn:hover {
+  background: #013970;
+  border: 1px solid;
+  color: white
+}
+
+.fondo{
+ background-color: #ffffff;
+ box-shadow: black;
+}
+
+.contenedor{
+
+    display: grid;
+    grid-template-columns: 60fr 35fr ;
+
+
+}
+.formulario {
+  padding-left: 60px;
+}
+.titulo{
+  color : #1F1F70;
+}

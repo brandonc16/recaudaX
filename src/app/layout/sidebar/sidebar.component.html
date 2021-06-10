@@ -1,0 +1,19 @@
+<nav class="nav flex-column side nav-pills sidebar-navigation" style="overflow: hidden;" >
+  <div class="links" style="margin: 2px;">
+
+  <li *ngFor='let item of menuItems' [ngClass]="{'nav-heading': item.heading}" [routerLinkActive]="['active']" style="margin:3px; padding:10px;">
+    <!-- single menu item -->
+    <a id="menu" class="nav-btn" *ngIf="!item.heading && !item.submenu && !item.elink" [routerLink]="item.link" [attr.route]="item.link" title="{{item.text}}">
+        <em class="{{item.icon}}" *ngIf="item.icon" style="color: rgb(17, 0, 255);"></em>
+        {{ item.text }}
+    </a> <br>
+    <a id="menuMovil" class="nav-btn pb-4" *ngIf="!item.heading && !item.submenu && !item.elink" [routerLink]="item.link" [attr.route]="item.link" title="{{item.text}}">
+      <em class="{{item.icon}}" *ngIf="item.icon" style="color: rgb(17, 0, 255);"></em>
+    </a>
+    <a id="menuIpad" class="nav-btn pb-4" *ngIf="!item.heading && !item.submenu && !item.elink" [routerLink]="item.link" [attr.route]="item.link" title="{{item.text}}">
+      <a *ngIf="item.icon" style="color: rgb(17, 0, 255);"></a>
+      {{ item.text }}
+    </a>
+    </li>
+  </div>
+</nav>
