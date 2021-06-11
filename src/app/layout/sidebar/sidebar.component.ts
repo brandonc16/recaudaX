@@ -1,6 +1,6 @@
-import { Component, Injector, OnInit } from '@angular/core';
 import { MenuService } from '../../core/menu/menu.service';
 import { SettingsService } from '../../core/settings/settings.service';
+import { Component, Injector, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({

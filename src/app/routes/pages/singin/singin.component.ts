@@ -28,7 +28,7 @@ export class SinginComponent implements OnInit {
             'Correo electrónico o contraseña incorrectos'
           );
       } else {
-        this.SwalService.successPetition('Bienvenido/a', '/home');
+        this.SwalService.successPetition('Bienvenido/a', '/people');
       }
     });
   }

@@ -9,9 +9,13 @@ export class Menu {
     const Usuarios = {
       text: 'Usuarios',
       icon: 'fa fa-list',
-      link: '/home',
+      link: '/people',
     };
-
-    return [headingMain, Usuarios];
+    const admin = {
+      text: 'Administrador',
+      icon: 'fa fa-list',
+      link: '/admin',
+    };
+    return [headingMain, Usuarios, admin];
   }
 }

@@ -7,9 +7,21 @@ export const routes = [
     children: [
       /*  { path: '', redirectTo: '', pathMatch: 'full' }, */
       {
-        path: 'home',
+        path: 'people',
         loadChildren: () =>
           import('./people/people.module').then((m) => m.PeopleModule),
+      },
+      {
+        path: 'people/:id',
+        loadChildren: () =>
+          import('./people-form/people-form.module').then(
+            (m) => m.PeopleFormModule
+          ),
+      },
+      {
+        path: 'admin',
+        loadChildren: () =>
+          import('./admin/admin.module').then((m) => m.AdminModule),
       },
     ],
   },

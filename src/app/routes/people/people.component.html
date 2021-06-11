@@ -1,1 +1,47 @@
-<p>people works!</p>
+
+<div class="container">
+  <div class="headerT">
+        <h4 class="titulo font-weight-bold ">Usuarios</h4>
+
+        <div class="col-sm-2">
+          <select  [(ngModel)]="filterbySex" title="Seleccione Institucion">
+              <option value="">Todos</option>
+              <option value="Hombre">Hombre</option>
+              <option value="Mujer">Mujer</option>
+
+            </select>
+      </div>
+      <button class="btn-pro" type="button" [routerLink]="[ '/people' , 'crear']">
+        <i id="myIcon" class="fa fa-plus-square"></i>&nbsp; Agregar</button>
+</div>
+
+
+
+<table class="table table-hover">
+    <thead  style="color: white; background: linear-gradient(to bottom right,#053473, #044288);">
+        <tr >
+            <th>NOMBRE</th>
+            <th style="text-align: center;">Edad</th>
+            <th style="text-align: center;">Sexo</th>
+
+        </tr>
+    </thead>
+    <tbody  style="background: white">
+        <tr  *ngFor="let item of Filter  | filter:filterbySex ">
+            <td style="color: black ; ">{{item.name}}</td>
+            <td style=" ">{{item.age}}</td>
+            <td style=" ">{{item.sex}}</td>
+            <td>
+                <i class="edit fa fa-edit pl-3 mr-1 "  [routerLink]="[ '/people' , item.id]" title="Editar Subcateogrìa"></i>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div>
+
+
+</div>
+
+
+
