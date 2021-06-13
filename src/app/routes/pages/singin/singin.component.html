@@ -1,42 +1,39 @@
 
-<body class="center" style="background: repeating-linear-gradient(#20206b, #191958 49.9%, #CDE3FC 50.1%, #c8e0fc 100%);" >
+<body class="center" >
   <div class=" center carta no-gutters">
     <div class="contenedor">
       <div class="formulario">
-        <h1  class="titulo font-weight-blog"><b>INICIA SESION</b></h1><br><br>
         <form [formGroup]='loginForm' (submit)='login(loginForm.value)'>
             <div class="group">
                 <input type="text" required formControlName="email">
                 <span class="highlight"></span>
                 <span class="bar"></span>
-                <label>CORREO</label>
-                <!-- <small *ngIf="login.controls['email'].errors?.required && login.touched" class="text-danger">Campo Requerido</small>
-                <small *ngIf="login.controls['email'].errors?.email && login.dirty" class="text-danger">Correo inválido</small> -->
+                <label>Email</label>
+
             </div>
             <div class="group">
                 <input type="password" required formControlName="password">
                 <span class="highlight"></span>
                 <span class="bar"></span>
-                <label>CONTRASEÑA</label>
-                  <!--   <small *ngIf="login.controls['password'].errors?.required && login.touched" class="text-danger">Campo Requerido</small>
-                    <small *ngIf="login.controls['password'].errors?.minlength && login.dirty" class="text-danger">Mínimo ocho caracteres</small> -->
-            </div><br>
-            <div class="form-row">
-                <div class="col-lg-7">
-                    <button type="submit"  class="btn btn-pro">INGRESAR</button> <!-- [disabled]="login.invalid" -->
-                </div>
+                <label>Password</label>
             </div>
-        </form>
-</div>
-<div class="foto">
 
-  <div class="col-5">
-    <img src="../../../../assets/login.png" alt="">
-  </div>
+                <div class="center">
+                    <button type="submit"  class="btn btn-pro">Log in</button>
+
+            </div>
+        </form><br>
+        <a href="" class="center">Olvide mi contraseña</a>
 </div>
     </div>
 
-</div>
-
+  </div>
+  <div class=" carta2 no-gutters" >
+    <h3>Bienvenido a </h3>
+    <h1><p>NEBULA</p></h1>
+  <p class="textL" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolor atque, possimus,
+    accusantium perspiciatis rerum sapiente officiis fugit expedita repellendus a optio adipisci quos iusto, hic sed in ipsum deleniti.</p>
+    <img src="../../../../assets/people.png" alt="" height="250px">
+  </div>
 </body>
 

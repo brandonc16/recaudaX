@@ -22,7 +22,7 @@
 .sidebar-navigation a {
   padding: 10px 15px 10px 30px;
   display: block;
-  color: #043E82;
+  color: white;
   font-weight: bolder;
 }
 
@@ -34,12 +34,12 @@
 /* DISEÑO COLOR TEXT/ICON AL PASAR EL MOUSE O ESTAR ACTIVO */
 .sidebar-navigation .nav-btn:hover {
   outline: none;
-  color: #FC6121;
+  color: #00FFFD;
 }
 .sidebar-navigation .active {
-  background-color: #EFF1F7;
+  background-color: #004767;
   color: gainsboro;
-  border-radius: 35px;
+  border-radius: 4px;
 }
 
 /* Color cuando la opcion este activada */
@@ -76,7 +76,7 @@
 
 .side {
   height: 100%;
-  background: white;
+  background:  linear-gradient(to bottom right,  #0072B1, #0072B1);
   width: 205px;
 }
 

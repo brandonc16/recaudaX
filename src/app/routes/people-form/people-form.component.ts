@@ -18,13 +18,10 @@ export class PeopleFormComponent implements OnInit {
     public people: PeopleService
   ) {
     this.peopleForm = new FormGroup({
-      name: new FormControl('', [
-        Validators.minLength(5),
-        Validators.maxLength(50),
-        Validators.pattern(/[a-zA-Z ]+$/),
-      ]),
-      age: new FormControl('', [Validators.min(10), Validators.max(90)]),
-      sex: new FormControl(''),
+      name: new FormControl('', [Validators.required]),
+      lastName: new FormControl('', [Validators.required]),
+      Password: new FormControl('', [Validators.required]),
+      email: new FormControl('', [Validators.required]),
     });
   }
 

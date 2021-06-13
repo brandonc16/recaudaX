@@ -1,8 +1,10 @@
 .navbar {
-  height: 100%;
-  background:  linear-gradient(to bottom right,  #1a5b92, #044288);
+  height: 50%;
+  background:  white;
   padding: 10px;
   height: auto ;
+  border: 3px;
+  border: black;
 
 }
 
@@ -14,7 +16,7 @@ nav li{
       width:200px;
       height:35px;
       text-align:center;
-      color:#fff;
+      color:gray;
       position:relative;
       padding-left: -30px;
 }
@@ -22,10 +24,12 @@ nav li{
 
 nav li>ul{
       display:none;
-      background: #064589;
+      background: #F8F9FA;
       border-radius: 7px ;
       height: max-content;
+
       }
+
 
 nav li:hover>ul{
       display:block;
@@ -48,4 +52,8 @@ nav li:hover>ul{
       #ttM {
             display: none;
       }
+}
+
+.content{
+  display: flex;
 }

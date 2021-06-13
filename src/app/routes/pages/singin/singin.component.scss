@@ -9,11 +9,22 @@
 border-radius: 29px;
 background: #ffffff;
 
-  width: 60%;
-  height: 90%;
+  width: 65%;
+  height: 55%;
   padding: 30px;
 }
 
+.carta2{
+  border-radius: 29px;
+background: black;
+
+  width: 30%;
+  height: 65%;
+  padding: 30px;
+  margin-left: -20%;
+  color: white;
+
+}
 img {
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
@@ -25,9 +36,9 @@ img {
 .btn {
   border: none;
   outline: none;
-  height: 50px;
-  width: 100%;
-  background-color: #034E9B;
+  height: 45px;
+  width: 120%;
+  background-color: #299CD3;
   color: white;
   border-radius: 18px;
   font-weight: bold;
@@ -48,13 +59,29 @@ img {
 .contenedor{
 
     display: grid;
-    grid-template-columns: 60fr 35fr ;
+    grid-template-columns: 50fr 50fr ;
 
 
 }
 .formulario {
-  padding-left: 60px;
+  padding-left: 0px;
 }
 .titulo{
   color : #1F1F70;
+}
+ body{
+      background-image: url(../../../../assets/loginbg.jpeg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-color: #999;
+ }
+ .textL{
+
+  font-size: xx-small;
+  color: gray;
+ }
+.Fp{
+  text-align: right;
 }

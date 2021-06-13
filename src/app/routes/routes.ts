@@ -31,5 +31,5 @@ export const routes = [
     loadChildren: () =>
       import('./pages/singin/singin.module').then((m) => m.SinginModule),
   } /*  */,
-  { path: '**', redirectTo: '/login' },
+  /*   { path: '**', redirectTo: '/login' }, */
 ];

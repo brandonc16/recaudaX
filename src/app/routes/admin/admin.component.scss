@@ -1,0 +1,38 @@
+.cards{
+display: grid;
+  grid-template-columns: 70fr 35fr;
+  gap: 30px;
+  border-color: grey
+}
+
+.savedAddress{
+  display: grid;
+  grid-template-columns: 70fr 30fr;
+
+}
+.cardtop{
+  display: flex;
+      border-color: grey;
+      background : #004767;
+      height: 45px;
+      margin-top: -11px;
+      width: 104%;
+      margin-left: -3px;
+      padding-top: 12px;
+      padding-left: 24px;
+      color: white;
+
+
+}
+.title{
+  color: #939393;
+}
+
+p{
+  color: #CCCCCC;
+}
+
+.icon{
+  cursor: pointer;
+  color: blue;
+}

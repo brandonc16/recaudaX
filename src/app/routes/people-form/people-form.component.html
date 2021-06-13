@@ -11,33 +11,27 @@
           <input type="text"  formControlName="name" >
           <span class="highlight"></span>
           <span class="bar"></span>
-          <small *ngIf="peopleForm.controls['name'].errors?.minlength &&
-          peopleForm.dirty" class="text-danger">Nombre corto </small>
-          <small *ngIf="peopleForm.controls['name'].errors?.maxlength &&
-           peopleForm.dirty" class="text-danger">Exede el limite de los carcateres</small>
-          <small *ngIf="peopleForm.controls['name'].errors?.pattern &&
-           peopleForm.dirty" class="text-danger">Caracteres invalidos</small>
-          <label>NOMBRE</label>
+          <label>Nombre(s)</label>
           </div>
           <div class="group">
-            <input type="number"  formControlName="age">
+            <input type="text"  formControlName="lastName">
             <span class="highlight"></span>
             <span class="bar"></span>
-            <small *ngIf="peopleForm.controls['age'].errors?.required &&
-            peopleForm.touched" class="text-danger">Campo Requerido</small>
-            <small *ngIf="peopleForm.controls['age'].errors?.min &&
-            peopleForm.dirty" class="text-danger">Edad minima 10 años </small>
-            <small *ngIf="peopleForm.controls['age'].errors?.max &&
-            peopleForm.dirty" class="text-danger">Edad maxima 90 años </small>
-            <label>Edad</label>
+            <label>Apellido </label>
             </div>
-            <div class="caja">
-              <p style="color: #6776B7;">Sexo</p>
-              <select formControlName="sex">
-                <option value="true">Hombre</option>
-                <option value="false" selected>Mujer</option>
-              </select>
+            <div class="group">
+              <input type="text"  formControlName="password">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Contraseña</label>
               </div>
+              <div class="group">
+                <input type="text"  formControlName="email">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Correo</label>
+                </div>
+
       </div><br><br>
       <div class="modal-footer ">
         <button  class="center boton btn-pro" type="button" routerLink="/people">REGRESAR</button>
